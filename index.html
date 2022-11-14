@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Counter</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+
+    <script src="./calculations.js" defer></script>
+
+</head>
+<body>
+    <div class="title">
+        <div class="dropdown">
+            <span class="material-symbols-outlined white">menu</span>
+            <div class="content">
+                <input type="text" placeholder="number of decks" id="num-decks">
+            </div>
+        </div>
+
+        <h1 class="white">Card Counter</h1>
+        <hr>
+    </div>
+    <div class="data-input">
+        <div class="inputs">
+            <div class="plus-one">
+                <input type="text" placeholder="2" id="two">
+                <input type="text" placeholder="3" id="three"> 
+                <input type="text" placeholder="4" id="four">
+                <input type="text" placeholder="5" id="five">
+                <input type="text" placeholder="6" id="six">
+            </div>
+            <div class="plus-zero">
+                <input type="text" placeholder="7" id="seven">
+                <input type="text" placeholder="8" id="eight">
+                <input type="text" placeholder="9" id="nine">
+            </div>
+            <div class="minus-one">
+                <input type="text" placeholder="10" id="ten">
+                <input type="text" placeholder="Jack" id="jack">
+                <input type="text" placeholder="Queen" id="queen">
+                <input type="text" placeholder="King" id="king">
+                <input type="text" placeholder="Ace" id="ace">
+            </div>
+            <button class="update">update cards</button>
+        </div>
+        <div class="data-window">
+            <div class="terminal-window">
+                <div class="bar">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="output-data">
+                    <h4>Active Count</h4>
+                    <h4>True Count</h4>
+                    <h4>Cards Left</h4>
+                    <span id="active-count"></span>
+                    <span id="true-count"></span>
+                    <span id="cards-left"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
